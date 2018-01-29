@@ -1,10 +1,72 @@
+<!-- Edwin Chau MMXVI -->
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title>Test</title>
+		<title>Edwin Chau</title>
+		
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- CSS/Favicons -->
+		<link href="main.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		
+		<!-- Jquery CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<!-- Smooth scrolling script import -->
+		<script src="jquery.js"></script><script>$(function(){$("#smoothScroll").load("smoothScroll.js");});</script>
+		<div id="smoothScroll"></div>
 	</head>
+	
 	<body>
-		<h1>Test :D</h1>
+		
+		<!-- What the users first see when the page loads -->
+		<div class="fullscreen center">
+			<div>
+				<h1>Edwin Chau</h1>
+				<h2>Student and Programming Enthusiast</h2>
+				<div class="specialLinks">
+					<a href="#about" class="index">About Me</a>
+					<a href="mailto:edwin.chau@live.com" class="index">Get in touch</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- The about section of the website -->
+		<div id="about">
+			<h3>Who am I?</h3>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec finibus tortor. Donec mi tortor, accumsan eu libero nec, sollicitudin elementum mi. Praesent vitae hendrerit leo, at aliquet velit. Sed at tortor ultrices, commodo nisi eget, commodo turpis. Donec sollicitudin augue nisl, eu tempus quam feugiat ac. Maecenas odio est, viverra eu dui vel, egestas commodo mi. Aliquam erat volutpat. Vestibulum neque nibh, vestibulum id aliquam sit amet, posuere tempus nibh. Nam a nunc fringilla, suscipit nulla et, feugiat enim. Cras luctus turpis quis ligula posuere sagittis. Praesent magna mauris, egestas at accumsan bibendum, interdum ac libero. Duis maximus sit amet mi non auctor.</p> -->
+			
+			<!-- Social media links and resume download -->
+			<table class="center">
+				<tr>
+					<th id="tableHeadingAlignment"><h4>Social Media</h4></th>
+					<th id="tableHeadingAlignment"><h4>Resume</h4></th>
+				</tr>
+				<tr>
+					<th id="tableHeadingAlignment">
+						<div id="social" class="specialLinks">
+							
+							<!-- Twitter Button -->
+							<a href="https://twitter.com/edwinchau_" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @edwinchau_</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+							
+							<!-- Github Button -->
+							<a class="github-button" href="https://github.com/edwinchau" data-style="mega" aria-label="Follow @edwinchau on GitHub">Follow @edwinchau</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+						</div>
+					</th>
+					<th id="tableHeadingAlignment">
+						<div class="specialLinks">
+						
+							<!-- Resume Button -->
+							<a href="https://docs.google.com/document/d/1wyiSwGQKx2oQda0wtBFliGM2tK6WeMF4KdHzXBLd-9g/edit?usp=sharing"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-file"></span> Resume</button></a>
+						</div>
+					</th>
+				</tr>
+			</table>
+			
+		</div>
 	</body>
 </html>
