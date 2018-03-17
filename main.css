@@ -111,6 +111,10 @@ p {
 	border-radius: 50%;
 }
 
+#displayPicture:hover {
+	-webkit-filter: grayscale(60%);
+}
+
 /*Resume Button styling*/
 #specialLinks {
 	display: inline-block;
