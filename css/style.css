@@ -26,16 +26,12 @@ a:hover {
     text-decoration: underline;
 }
 
-.container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
 
-#profile-picture {
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
