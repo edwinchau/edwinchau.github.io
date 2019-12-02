@@ -1,61 +1,50 @@
-<!-- Edwin Chau MMXVIII -->
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Edwin Chau</title>
-		
-		<!-- Bootstrap CDN -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		
-		<!-- CSS/Favicons -->
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
-		
-		<!-- Jquery CDN -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		
-		<!-- Smooth scrolling script import -->
-		<script src="jquery.js"></script><script>$(function(){$("#smoothScroll").load("smoothScroll.js");});</script>
-		<div id="smoothScroll"></div>
-	</head>
-	
-	<body>
-	
-		<section class="fullscreen center">
-			<div>
-				<h1>Edwin Chau</h1>
-				
-				<h2>Student and Programming Enthusiast</h2>
-				
-				<div>
-					<a href="#about" class="menuLinks">About Me</a>
-					<a href="mailto:edwin.chau@live.com" class="menuLinks">Get in touch</a>
-				</div>
-			</div>
-		</section>
-		
-		<section id="about">
-			<div id="aboutInfo">
-				<img id="displayPicture" src="new_dp.png" alt="Edwin Chau - Display Picture">
-				<div>
-					<h3>Who am I?</h3>
-					<br>
-					<p>Hi there! My name is Edwin. I am an avid programmer and rock climber who is currently studying Software Engineering at The University of Sydney. Right now I am interested in gaining some industry experience in software development such as through an internship; so feel free to check out my GitHub profile or contact me using the links below.</p>
-					
-					<br>
-					<br>
-					<div id="specialLinks">
-						<!-- Resume Button -->
-						<a href="edwinchau.github.io/Resume.pdf"><button style="margin-top:-18px;" type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-file"></span> Resume</button></a>
-						<!-- Github Button -->
-						<a class="github-button" href="https://github.com/edwinchau" data-size="large" aria-label="Follow @edwinchau on GitHub">Follow @edwinchau</a><script async defer src="https://buttons.github.io/buttons.js"></script>
-					</div>
-				</div>
-			</div>
-		</section>
-	
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edwin Chau</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="static/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="static/favicon-16x16.png" sizes="16x16"/>
+</head>
+<body>
+<section class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img id="profile-picture" src="static/display-picture.jpg">
+        </div>
+        <div class="col-md-8">
+            <h1>Edwin Chau</h1>
+            <h2>Software Engineering Student<span id="cursor">|</span></h2>
+            <p>An avid rock climber and programming enthusiast who is always looking for new and exciting opportunities.
+                Known as a self-starter, team player and multitasker who strives to consistently exceed expectations.
+                Expected graduation date of December 2020. 🎉
+            </p>
+            <div class="row">
+                <div class="col-3"><p><i class="fas fa-file-alt"></i> <a href="https://edwinchau.github.io/Resume.pdf">Resume</a></p></div>
+                <div class="col-3"><p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/edwin-chau/">LinkedIn</a></p></div>
+                <div class="col-3"><p><i class="fab fa-github"></i> <a href="https://github.com/edwinchau">GitHub</a></p></div>
+                <div class="col-3"><p><i class="fas fa-envelope"></i> <a href="mailto:edwin.chau@live.com">Email</a></p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var cursor = true;
+    var speed = 1000;
+    setInterval(() => {
+        if(cursor) {
+            document.getElementById('cursor').style.opacity = 0;
+            cursor = false;
+        }else {
+            document.getElementById('cursor').style.opacity = 1;
+            cursor = true;
+        }
+    }, speed);
+</script>
+</body>
 </html>
