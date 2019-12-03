@@ -5,7 +5,7 @@ h1 {
     font-weight: 700;
     font-size: 80px;
     text-transform: uppercase;
-    color: #031A8D;
+    color: #6666ff;
 }
 
 h2 {
@@ -18,7 +18,7 @@ p {
 }
 
 a {
-    color: black;
+    color: #000000;
 }
 
 a:hover {
@@ -27,11 +27,30 @@ a:hover {
 }
 
 .vertical-center {
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100%;  /* Fallback for browsers that do NOT support vh unit */
     min-height: 100vh;
 
     display: flex;
     align-items: center;
+}
+
+#rainbow_text_animated:hover, #rainbow_text_animated:active {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 18s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
 
 @media only screen and (min-width: 768px) {
