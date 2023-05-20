@@ -1,59 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+h1, h2, p {
+	font-family: "Cutive Mono", "Courier New", monospace;
+}
 
 h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: #6666ff;
+	font-size: 4rem;
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.2rem;
+	font-size: 2rem;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
+	font-size: 1.2rem;
 }
 
 a {
-    color: #000000;
+	color: #3366CC;
 }
 
-a:hover {
-    color: #428bca;
-    text-decoration: underline;
+img {
+	height: auto;
+	max-width: 100%;
 }
 
-.vertical-center {
-    min-height: 100%;  /* Fallback for browsers that do NOT support vh unit */
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+.plain-url {
+	color: inherit;
 }
 
-#rainbow_text_animated:hover, #rainbow_text_animated:active {
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 18s ease-in-out infinite;
-    background-size: 400% 100%;
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
-@keyframes rainbow_animation {
-    0%, 100% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
+#info {
+	padding: 0% 5%;
 }
 
-@media only screen and (min-width: 768px) {
-    #profile-picture {
-        border-radius: 50%;
-    }
+#caricature {
+	float: left;
+	width: 750px;
+	clip-path: polygon(0% 0%, 60% 0%, 60% 40%, 72% 50%, 75% 100%, 0% 100%);
+	shape-outside: polygon(0% 0%, 60% 0%, 60% 40%, 72% 50%, 75% 100%, 0% 100%);
+}
+
+#text {
+	margin-top: 15%;
+	width: 900px;
+}
+
+@media only screen and (max-width: 900px) {
+	#caricature {
+		float: none;
+	}
+	
+	#text {
+		margin-top: -5%;
+		width: 100%;
+	}
 }
