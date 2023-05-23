@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
+body {
+	margin: 0px;
+}
+
 h1, h2, p {
 	font-family: "Cutive Mono", "Courier New", monospace;
 }
